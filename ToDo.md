@@ -64,7 +64,7 @@ Petsy To Do's
         - [ ] review
     - [ ] CRUD
         - [ ] listings
-            - [ ]create listing
+            - [ ] create listing
             - [ ] see all listings
             - [ ] update listing
             - [ ] delete listings
