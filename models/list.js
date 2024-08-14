@@ -36,6 +36,14 @@ const listSchema = new mongoose.Schema(
       required: true,
       enum: ['Electronics', 'Books', 'Clothing', 'Furniture', 'Toys', 'Food']
     },
+    price: {
+      type: Number,
+      require: true,
+    },
+    image: {
+      type: String,
+      require: true,
+    },
     author: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     reviews: [reviewSchema]
   },
