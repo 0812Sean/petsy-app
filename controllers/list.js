@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Update the specified List
+// Update the specified Listing
 router.put('/:listId', async (req, res) => {
     try {
       const list = await List.findById(req.params.listId);
