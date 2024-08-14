@@ -4,12 +4,14 @@ const reviewSchema = new mongoose.Schema(
   {
     text: {
       type: String,
-      required: true
+      required: true,
     },
-    author: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+    author: { 
+      type: mongoose.Schema.Types.ObjectId, ref: 'User', 
+      required: true,
+     },
     rating: {
       type: Number,
-      required: true,
       min: 1,
       max: 5
     }
