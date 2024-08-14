@@ -6,46 +6,50 @@ Petsy To Do's
 
 ---
 
-## [ ] README
+## [ ] README - JP
 - [ ] - Logo
 - [ ] - App Name
 - [ ] - Getting Started
 - [ ] - Tech
 - [ ] - attributes
 - [ ] - movingForward
+
 ## [ ] Front End
 - [ ] .env
 - [ ] .gitignore
 - [ ] componenets
-    - [ ] sign up
-        - [ ] jsx
+    - [ x ] sign up
+        - [ x ] jsx
         - [ ] css
-    - [ ] sign in
+    - [ x ] sign in
         - display username/password inputs
         - onClickSignIn send the user to their User Page
-        - [ ] jsx
+        - [ x ] jsx
         - [ ] css
-    - [ ] sign out
+    - [ x ] sign out
         - sign out the user
         - send the user to the landing page
-        - [ ] jsx
+        - [ x ] jsx
         - [ ] css
-    - [ ] User Page
+    - [ x ] Dashboard - Ari
         - when landing on user page have NavBar show ** just ** sign out
         - 'Welcome, SpecificUser'
         -display all of the users lsitings in a grid format - each list should have a button to edit or delete that specific listing
-        - [ ] jsx
+        - [ x ] jsx
         - [ ] css
-    - [ ] Landing Page
-        - [ ] jsx
-        - [ ] css
-    - [ ] newItem Page
-        - [ ] jsx
+    - [ x ] Landing Page - Dachen
+        - [ x ] jsx
+        - [ x ] css
+    - [ x ] NewListing
+        - [ x ] jsx
         - [ ] css
     - [ ] 'marketplace' Page (view all listings)
         - [ ] jsx
         - [ ] css
-    - [ ] NavBar
+    - [ x ] NavBar
+    - [ ] Reviews -JP
+        - review button on dashbaord
+        - review on each listing on the marketplace
 
 - ### [ ] Global CSS
     - [ ] theme
@@ -55,13 +59,13 @@ Petsy To Do's
     - [ ]nav colors
 
 - ## [ ] Back End
-    - [ ] .env
-    - [ ] .gitignore
-    - [ ] JWT Auth
-    - [ ] Schemas 
-        - [ ] user 
-        - [ ] listing 
-        - [ ] review
+    - [ x ] .env
+    - [ x ] .gitignore
+    - [ x ] JWT Auth
+    - [ x ] Schemas 
+        - [ x ] user 
+        - [ x ] listing 
+        - [ x ] review
     - [ ] CRUD
         - [ ] listings
             - [ ] create listing
