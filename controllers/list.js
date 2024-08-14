@@ -1,14 +1,28 @@
 const express = require('express');
+const multer = require('multer'); 
 const verifyToken = require('../middleware/verify-token.js');
 const List = require('../models/list.js');
 const router = express.Router();
 
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/'); 
+  },
+  filename: function (req, file, cb) {
+    cb(null, `${Date.now()}-${file.originalname}`);
+  }
+});
+
+const upload = multer({ storage });
+
 router.use(verifyToken);
 
 // Create a new List
-router.post('/', async (req, res) => {
+router.post('/', upload.single('image'), async (req, res) => {
     try {
       req.body.author = req.user._id;
+      req.body.imageUrl = req.file ? `/uploads/${req.file.filename}` : null; 
+    
       const list = await List.create(req.body);
       list._doc.author = req.user;
       res.status(201).json(list);
@@ -24,6 +38,7 @@ router.get('/', async (req, res) => {
       const lists = await List.find({})
         .populate('author')
         .sort({ createdAt: 'desc' });
+    
       res.status(200).json(lists);
     } catch (error) {
       res.status(500).json(error);
@@ -31,12 +46,17 @@ router.get('/', async (req, res) => {
 });
 
 // Update the specified List
-router.put('/:listId', async (req, res) => {
+router.put('/:listId', upload.single('image'), async (req, res) => {
     try {
       const list = await List.findById(req.params.listId);
       if (!list.author.equals(req.user._id)) {
         return res.status(403).send("You're not allowed to do that!");
       }
+
+      if (req.file) { 
+        req.body.imageUrl = `/uploads/${req.file.filename}`;
+      }
+
       const updatedList = await List.findByIdAndUpdate(
         req.params.listId,
         req.body,
