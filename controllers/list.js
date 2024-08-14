@@ -51,6 +51,23 @@ router.put('/:listId', async (req, res) => {
     }
 });
 
+router.get('/:listId', async (req, res) => {
+  try {
+    const list = await List.findById(req.params.listId)
+      .populate('author')
+      .populate('reviews.author'); 
+
+    if (!list) {
+      return res.status(404).json({ message: 'List not found' });
+    }
+
+    res.status(200).json(list);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json(error);
+  }
+});
+
 // Delete the specified List
 router.delete('/:listId', async (req, res) => {
     try {
