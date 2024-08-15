@@ -6,13 +6,15 @@ Petsy To Do's
 
 ---
 
-## [ x ] README - JP
+## [ ] README - JP
 - [ x ] - Logo
 - [ x ] - App Name
 - [ x ] - Getting Started
 - [ x ] - Tech
 - [ x ] - attributes
 - [ x ] - movingForward
+- [ ] landing page .gif
+- [ ] deployment links
 
 ## [ ] Front End
 - [ ] .env
@@ -79,8 +81,16 @@ Petsy To Do's
             - [ ] edit review
             - [ ] delete review
 
-## [ ] Deployment
+- ## [ ] Clean Up
+    - [ ] remove all console logs
+    - [ ] remove all commented out codes
+    - [ ] remove test codes (marked with '// !')
+    - [ ] remove empty compenent css files
+
+## [ x ] Deployment
 - [ x ] heroku
     - [Back End Deployment](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources/deployment/men-stack-deployment/)
-- [ ] netlify
+    - [Heroku](https://petsy-04cce7e7e9f8.herokuapp.com/)
+- [ x ] netlify
     - [Front End Deployment](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources/deployment/react-front-end-deployment/)
+    - [Netlify](https://petsy-app.netlify.app)
