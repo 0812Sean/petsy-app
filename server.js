@@ -8,6 +8,7 @@ const testJWTRouter = require('./controllers/test-jwt');
 const profilesRouter = require('./controllers/profiles');
 const usersRouter = require('./controllers/users');
 const listRouter = require('./controllers/list');
+const path = require('path');
 
 const PORT = process.env.PORT ? process.env.PORT : 3000;
 
@@ -19,6 +20,8 @@ mongoose.connection.on('connected', () => {
 
 app.use(cors());
 app.use(express.json());
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 
 // Routes go here
 app.use('/users', usersRouter);
