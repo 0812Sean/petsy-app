@@ -42,7 +42,7 @@ const listSchema = new mongoose.Schema(
       type: Number,
       require: true,
     },
-    image: {
+    imageUrl: {
       type: String,
       require: true,
     },
