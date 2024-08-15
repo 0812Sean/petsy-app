@@ -17,13 +17,7 @@ mongoose.connection.on('connected', () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
 
-app.use(
-  cors({
-    origin: 'https://petsy-olive.vercel.app',
-    methods: 'GET,POST,PUT,DELETE',
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.json());
 
 // Routes go here
