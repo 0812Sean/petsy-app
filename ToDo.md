@@ -6,13 +6,13 @@ Petsy To Do's
 
 ---
 
-## [ ] README - JP
-- [ ] - Logo
-- [ ] - App Name
-- [ ] - Getting Started
-- [ ] - Tech
-- [ ] - attributes
-- [ ] - movingForward
+## [ x ] README - JP
+- [ x ] - Logo
+- [ x ] - App Name
+- [ x ] - Getting Started
+- [ x ] - Tech
+- [ x ] - attributes
+- [ x ] - movingForward
 
 ## [ ] Front End
 - [ ] .env
@@ -54,9 +54,9 @@ Petsy To Do's
 - ### [ ] Global CSS
     - [ ] theme
     - [ ] background color
-    - [ ]text color
-    - [ ]button colors
-    - [ ]nav colors
+    - [ ] text color
+    - [ ] button colors
+    - [ ] nav colors
 
 - ## [ ] Back End
     - [ x ] .env
@@ -80,7 +80,7 @@ Petsy To Do's
             - [ ] delete review
 
 ## [ ] Deployment
-- [ ] heroku
+- [ x ] heroku
     - [Back End Deployment](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources/deployment/men-stack-deployment/)
 - [ ] netlify
     - [Front End Deployment](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources/deployment/react-front-end-deployment/)
