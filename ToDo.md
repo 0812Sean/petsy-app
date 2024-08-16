@@ -13,8 +13,8 @@ Petsy To Do's
 - [ x ] - Tech
 - [ x ] - attributes
 - [ x ] - movingForward
-- [ ] landing page .gif
-- [ ] deployment links
+- [   ] landing page .gif
+- [ x ] deployment links
 
 ## [ ] Front End
 - [ ] .env
